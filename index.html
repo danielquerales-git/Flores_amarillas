@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Para Emma 💛</title>
+
+    <meta
+      name="description"
+      content="Un pequeño detalle hecho con amor para Emma."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- Fondo -->
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+    <div class="background-glow glow-3"></div>
+
+    <!-- Corazones generados por JS -->
+    <div id="effectsLayer"></div>
+
+    <main class="page">
+      <!-- ================= HEADER ================= -->
+
+      <header class="hero">
+        <div class="date-badge">
+          <span class="dot"></span>
+          TE AMO
+          <span class="dot"></span>
+        </div>
+
+        
+
+        <h1 id="mainTitle">
+          <span>Para</span>
+          <strong>Emma</strong>
+        </h1>
+
+        <p class="hero-text">
+          Para los cachetes mas hermosos que han existido
+        </p>
+
+        <div class="title-line">
+          <span></span>
+          <div class="tiny-heart">♥</div>
+          <span></span>
+        </div>
+      </header>
+
+      <!-- ================= RAMO ================= -->
+
+      <section class="bouquet-section">
+        <div class="instruction">
+          <div class="instruction-icon">✦</div>
+
+          <div>
+            <strong>Explora el ramo</strong>
+            <p>Arrastra para verlo desde cualquier ángulo y toca una flor.</p>
+          </div>
+        </div>
+
+        <!-- Contenedor 3D -->
+        <div
+          id="sceneContainer"
+          class="scene-container"
+          aria-label="Ramo de flores amarillas en 3D"
+        ></div>
+
+        <!-- Controles -->
+
+        <div class="controls">
+          <button id="rotateButton" class="control-button" type="button">
+            <span>↻</span>
+            Movimiento
+          </button>
+
+          <button
+            id="messageButton"
+            class="control-button primary"
+            type="button"
+          >
+            <span>♥</span>
+            Abrir mi detalle
+          </button>
+
+          <button
+            id="soundButton"
+            class="control-button"
+            type="button"
+            aria-label="Activar o desactivar sonido"
+          >
+            ♪
+          </button>
+        </div>
+      </section>
+
+      <!-- ================= CARTA ================= -->
+
+      <section id="letterSection" class="letter-section" aria-hidden="true">
+        <div class="letter-card">
+          <div class="letter-decoration">✦</div>
+
+          <p class="letter-kicker">Para ti, Emma</p>
+
+          <h2>Un ramo que no se marchita</h2>
+
+          <div class="letter-divider">
+            <span></span>
+            ♥
+            <span></span>
+          </div>
+
+          <p class="letter-text">
+            Dicen que las flores amarillas representan alegría, cariño y buenos
+            deseos.
+          </p>
+
+          <p class="letter-text">
+            Yo deseo que con el favor de Dios cada dia seas mas feliz que el anterior
+          </p>
+
+          <p class="letter-text">
+            Ojalá cada vez que veas estas flores recuerdes que hay alguien que
+            sonríe simplemente por ver tu sonrisa en una foto
+          </p>
+
+          <p class="letter-signature">
+            
+            <br />
+            <strong>Te amo 💛</strong>
+          </p>
+
+          <button id="closeLetter" class="close-button" type="button">
+            Cerrar
+          </button>
+        </div>
+      </section>
+
+      <!-- ================= FOOTER ================= -->
+
+      <footer>
+        <div class="footer-heart">♥</div>
+
+        
+
+        <span> 21 · 09 </span>
+      </footer>
+    </main>
+
+    <!-- ================= THREE.JS ================= -->
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+        }
+      }
+    </script>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
